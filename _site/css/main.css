@@ -1,20 +1,79 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}
+a img {
+  border: none;
+}
+/* END RESET*/
+
 /*GLOBAL STYLES*/
 body {
 	box-sizing: border-box;
 	background-color: seashell;
-	margin-left: 0;
-	margin-right: 0;
-	margin-top: 0;
+	margin: 0 auto;
 }
 
 header {
+	display: block;
+	width: 100%;
 	height: 250px;
 	background: transparent url(http://www.litchfieldlaser.com/images/headerbg.jpg?crc=4056648723) no-repeat center top;
 	background-size: cover;
+	margin-top: 50px;
+	margin: 0 auto;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 10%;
+	background-color: black;
 }
 
 h1 {
-	position: absolute;
+	margin: 0 auto;
+	position: relative;
+	top: 25px;
 	left: 300px;
 	color: #367E7B;
     font-family: 'Satisfy', sans-serif;
@@ -32,7 +91,8 @@ h1 {
 }
 
 h2 {
-	position: absolute;
+	margin: 0 auto;
+	position: relative;
 	left: 250px;
 	top: 50px;
 	color: #367E7B;
@@ -46,38 +106,52 @@ h2 {
 }
 
 /*CLASSES*/
-.wrapper {
-	margin-left: 210px;
-	margin-right: 210px;
-	position: fixed;
+.header-wrapper {
+	position: relative;
+	top: 209px;
+	height: 39px;
+	background: rgba(128, 128, 128, 0.7);
+}
+
+.header-nav {
+	box-sizing: border-box;
+	top: 10%;
+	transform: translate(35%, 50%)
+}
+
+.nav {
+	list-style: none;
+	padding: 0;
+}
+
+.nav > li {
+	display: inline-block;
+	margin-left: 3em;
+	color: #EBF9FE;
+	font-size: 20px;
+}
+
+
+
+.main {
 }
 
 .container {
-	position: absolute;
-	top: 40px;
-	left: 50%;
 }
 
 .first-img {
-	position: absolute;
 	left: 0px;
-	margin: 10px;
-	margin-top: 80px;
 	width: 225px;
 	height: 300px;
 }
 
 .second-img {
-	position: absolute;
-	left: 700px;
-	margin: 10px;
-	margin-top: 80px;
+	margin-top: 60px;
 	width: 276px;
 	height: 298px;
 }
 
 .inner-body {
-	position: absolute;
 	left: 250px;
 	top: 100px;
 	line-height: 16px;
